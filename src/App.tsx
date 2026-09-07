@@ -9,7 +9,7 @@ function App() {
   const TypiCodePromise =async():Promise<Typecode[]>=>{
 
     const res = await fetch('https://jsonplaceholder.typicode.com/users');
-    const data:Typecode[] = await res.json();
+    const data = await res.json();
     return data;
 
   }
